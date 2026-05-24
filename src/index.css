@@ -7,9 +7,34 @@ html {
 }
 
 body {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+    Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+
+  background: #020617;
+  overflow-x: hidden;
+  color: white;
 }
 
-.glass {
-  @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-glass;
+::selection {
+  background: #22d3ee;
+  color: black;
 }
+
+.glow {
+  box-shadow:
+    0 0 20px rgba(34, 211, 238, 0.3),
+    0 0 40px rgba(34, 211, 238, 0.2);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #22d3ee, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-bg {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(34, 211, 238, 0.1);
+}
+
